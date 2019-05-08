@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/item_pacote_imagem"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/recife_pe"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/item_pacote_local"
+        android:background="@android:drawable/screen_background_dark_transparent"
+        android:textStyle="bold"
+        android:padding="8dp"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="São Paulo"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="@id/item_pacote_imagem"
+        app:layout_constraintEnd_toEndOf="@id/item_pacote_imagem"
+        app:layout_constraintStart_toStartOf="@id/item_pacote_imagem"
+        app:layout_constraintTop_toTopOf="@id/item_pacote_imagem"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="1.0" />
+    
+    <View
+        android:id="@+id/item_pacote_dvisor"
+        android:background="@android:color/holo_orange_dark"
+        app:layout_constraintTop_toBottomOf="@id/item_pacote_imagem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="3dp"/>
+
+    <TextView
+
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_margin="8dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintTop_toBottomOf="@id/item_pacote_dvisor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="2 dias"
+        android:id="@+id/item_pacote_dias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textColor="@android:color/holo_green_dark"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R$ 249,99"
+        app:layout_constraintStart_toStartOf="@id/item_pacote_local"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item_pacote_dias"
+        app:layout_constraintHorizontal_bias="0.0"/>
+
+</android.support.constraint.ConstraintLayout>
